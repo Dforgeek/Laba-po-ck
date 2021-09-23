@@ -1,0 +1,119 @@
+        -:    0:Source:D:/ITMO Education/Programming/Laba-po-ck/main.cpp
+        -:    0:Graph:D:\ITMO Education\Programming\Laba-po-ck\cmake-build-debug-coverage\CMakeFiles\Laba_po_IT_C_1.dir\main.cpp.gcno
+        -:    0:Data:D:\ITMO Education\Programming\Laba-po-ck\cmake-build-debug-coverage\CMakeFiles\Laba_po_IT_C_1.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include <iomanip>
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+function main called 1 returned 100% blocks executed 67%
+        1:    6:int main() {
+        -:    7:    int input_com;
+        -:    8:    long double a, b;
+        1:    9:    cout << ("Enter 2 integer numbers\n>");
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   10:    cin >> a >> b;
+        1:   10-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   10-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   11:    cout << ("What do you want to do with this numbers?\n");
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   12:    cout << ("Enter \"1\", \"2\", \"3\", \"4\" for addition, subtraction, multiplication or dividing \n"
+        1:   13:             "(if you will try to divide by zero, you'll get \"inf\")\n>");
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   14:    cin >> input_com;
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15:    if (input_com == 1) {
+        1:   15-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   16:        cout << "And the result is:" << (a + b);
+    %%%%%:   16-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   16-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        1:   17:    } else if (input_com == 2) {
+        1:   17-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   18:        cout << "And the result is:" << (a - b);
+    %%%%%:   18-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   18-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        1:   19:    } else if (input_com == 3) {
+        1:   19-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   20:        cout << setprecision(7) << fixed;
+    %%%%%:   20-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   20-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    #####:   21:        cout << "And the result is:" << (a * b);
+    %%%%%:   21-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   21-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        1:   22:    } else if (input_com == 4) {
+        1:   22-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   23:        cout << setprecision(7) << fixed;
+        1:   23-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   23-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   24:        cout << "And the result is:"  << (a / b);
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        -:   25:    }
+        1:   26:    return 0;
+        1:   26-block  0
+        -:   27:}
