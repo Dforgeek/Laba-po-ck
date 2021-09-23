@@ -4,22 +4,23 @@
 using namespace std;
 
 int main() {
-    system("chcp 1251");
     int input_com;
-    long long a, b;
-    cout << ("Впиши два любых целых числа через пробел\n>");
+    long double a, b;
+    cout << ("Enter 2 integer numbers\n>");
     cin >> a >> b;
-    cout << ("Какую операцию между этими двумя числами ты хочешь произвести?\n");
-    cout << ("Впиши 1, 2, 3, 4 для сложения, вычитания, умножения, деления соответсвенно\n>");
+    cout << ("What do you want to do with this numbers?\n");
+    cout << ("Enter \"1\", \"2\", \"3\", \"4\" for addition, subtraction, multiplication or dividing \n>");
     cin >> input_com;
     if (input_com == 1) {
-        cout << "Результат таков:" << (a + b);
+        cout << "And the result is:" << (a + b);
     } else if (input_com == 2) {
-        cout << "Результат таков:" << (a - b);
+        cout << "And the result is:" << (a - b);
     } else if (input_com == 3) {
-        cout << "Результат таков:" << (a * b);
+        cout << setprecision(3) << fixed;
+        cout << "And the result is:" << (a * b);
     } else if (input_com == 4) {
-        cout << "Результат таков:" << setprecision(3) << (double) (a / b);
+        cout << setprecision(3) << fixed;
+        cout << "And the result is:"  << (a / b);
     }
     return 0;
 }
